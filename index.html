@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio | Laércio José dos Santos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Menu de Navegação Fixo -->
+    <header>
+        <nav id="navbar">
+            <div class="logo">Meu Portfólio</div>
+            <ul class="nav-links">
+                <li><a href="#sobre">Sobre Mim</a></li>
+                <li><a href="#formacao">Formação</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            <!-- Botão para alternar tema (Extra) -->
+            <button id="theme-toggle">🌓</button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Seção Sobre Mim -->
+        <section id="sobre" class="section">
+            <div class="container">
+                <h1>Sobre Mim</h1>
+                <div class="sobre-content">
+                    <img src="C:\Users\laercio.santos\Desktop\UNINTER - ANALISE DE SISTEMAS\trabalho Uninter\image\foto laercio portifolio.jpeg" alt="Minha Foto" class="profile-img" style="max-width: 200px; height: auto;">
+                    <p>Olá! Meu nome é Laércio José dos Santos, sou Analista de Sistemas com experiência em desenvolvimento Delphi, Oracle, Python. Adoro resolver problemas através do código e estou sempre aprendendo novas tecnologias. No meu tempo livre, gosto de ir a academia.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Formação -->
+        <section id="formacao" class="section bg-light">
+            <div class="container">
+                <h1>Formação Acadêmica</h1>
+                <div class="cards-grid">
+                    <div class="card">
+                        <h3>Graduação em Tecnologia em Analise e Desenvolvimento de Sistemas</h3>
+                        <p>Instituição: Faculdade Internacional Uninter</p>
+                        <p>Status: Cursando (Previsão:12/2026)</p>
+                    </div>
+                    <div class="card">
+                        <h3>Idiomas</h3>
+                        <p>Português (Nativo) / Inglês (Intermediário)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Portfólio -->
+        <section id="portfolio" class="section">
+            <div class="container">
+                <h1>Meu Portfólio</h1>
+                <div class="portfolio-grid">
+                    <!-- Exemplo de projeto -->
+                    <div class="projeto">
+                        <h3>Projeto 01</h3>
+                        <p>Este é apenas um exemplo de projeto.</p>
+                        <a href="https://github.com/" target="_blank">Ver Código</a>
+                    </div>
+                    <div class="projeto">
+                        <h3>Projeto 02</h3>
+                        <p>Página de vendas desenvolvida com HTML/CSS.(Isto é apenas um exemplo)</p>
+                        <a href="https://github.com/" target="_blank">Ver Código</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Contato com Validação JS -->
+        <section id="contato" class="section bg-light">
+            <div class="container">
+                <h1>Contato</h1>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" placeholder="seu@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" rows="5" placeholder="Sua mensagem..."></textarea>
+                    </div>
+                    <button type="submit" class="btn-enviar">Enviar Mensagem</button>
+                </form>
+                <div id="form-feedback" class="hidden"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 - Desenvolvido por Laércio José dos Santos</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
